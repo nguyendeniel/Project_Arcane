@@ -1,0 +1,57 @@
+.header {
+    height: 100px;
+    min-width: 1600px;
+    max-width: 100%;
+    border: 1px solid black;
+    background: cornflowerblue;
+}
+
+.navigation-menu li {
+    display: inline-block;
+    padding: 20px 7% 20px 7%;
+}
+
+.navigation-menu a {
+    text-decoration: none;
+    color: black;
+    font-family: "Century Gothic";
+    font-size: 25px;
+}
+
+.active-page a {
+    color: orange;
+}
+
+.welcome-string {
+    min-width: 1450px;
+    max-width: 100%;
+    display: block;
+    margin: 25px 5% 25px 5%;
+    text-align: justify;
+}
+
+.welcome-string h1 {
+    font-family: "Century Gothic";
+    font-size: 55px;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.welcome-string a {
+    font-family: "Century Gothic";
+    font-size: 40px;
+}
+
+footer {
+    background: cornflowerblue;
+    align-items: center;
+    border: 1px solid black;
+    margin: 4% 0 0 0;
+    text-align: center;
+}
+
+.hello_world {
+    font-size: 65px;
+    font-family: "Century Gothic";
+    padding: 15px;
+}
