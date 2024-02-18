@@ -1,23 +1,7 @@
 from flask import Flask, render_template
-from config import SqlConfig
-
 
 
 app = Flask(__name__)
-root = SqlConfig('localhost', 3306, 'root', 'cookingpie1998', 'db_website')
-host, port, user, password, db_name = root.user_param
-
-try:
-    connection = pymysql.connect(
-        host=host,
-        port=port,
-        user=user,
-        password=password,
-        database=db_name)
-    print('all okay')
-except Exception as exes:
-    print('Not okay')
-    print(exes)
 
 
 @app.route("/", methods=["GET"])

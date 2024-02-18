@@ -1,12 +1,11 @@
 body {
     font-family: "Century Gothic";
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5970763305322129) 50%, rgba(0,0,0,1) 100%);
 }
+
 .header {
-    height: 100px;
     min-width: 1600px;
-    max-width: 100%;
-    border: 1px solid black;
-    background: cornflowerblue;
 }
 
 .navigation-menu li {
@@ -40,19 +39,4 @@ body {
 
 .welcome-string a {
     font-size: 40px;
-}
-
-footer {
-    background: cornflowerblue;
-    align-items: center;
-    min-width: 1600px;
-    max-width: 100%;
-    border: 1px solid black;
-    margin: 4% 0 0 0;
-    text-align: center;
-}
-
-.hello_world {
-    font-size: 65px;
-    padding: 15px;
 }
