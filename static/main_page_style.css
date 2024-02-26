@@ -1,11 +1,11 @@
 body {
     font-family: "Century Gothic";
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5970763305322129) 50%, rgba(0,0,0,1) 100%);
 }
 
 .header {
     min-width: 1600px;
+    background: rgb(89,89,89);
+    background: linear-gradient(90deg, rgba(89,89,89,1) 15%, rgba(89,89,89,1) 50%, rgba(89,89,89,1) 85%);
 }
 
 .navigation-menu li {
@@ -31,12 +31,39 @@ body {
     text-align: justify;
 }
 
+.welcome-string {
+    animation: 2s anim-text ease-out infinite;
+    animation-iteration-count: 1
+}
+
 .welcome-string h1 {
     font-size: 55px;
     margin-top: 45px;
     text-align: center;
+    padding: 18% 0 30% 0;
 }
 
-.welcome-string a {
-    font-size: 40px;
+.about_website {
+    text-align: justify;
+    font-size: 35px;
+    margin: 0px 10% 45px 10%;
 }
+
+@keyframes anim-text {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
