@@ -3,11 +3,9 @@ body {
 }
 
 .header {
-    height: 100px;
     min-width: 1600px;
-    max-width: 100%;
-    border: 1px solid black;
-    background: cornflowerblue;
+    background: rgb(89,89,89);
+    background: linear-gradient(90deg, rgba(89,89,89,1) 15%, rgba(89,89,89,1) 50%, rgba(89,89,89,1) 85%);
 }
 
 .navigation-menu li {

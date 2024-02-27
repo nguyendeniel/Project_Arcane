@@ -1,34 +1,39 @@
 body {
-    font-family: "Century Gothic";
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    background: url(/static/images/main_background.jpg) center no-repeat;
+    color: white;
+    display: block;
+    margin: 0;
 }
 
-.header {
-    min-width: 1600px;
-    background: rgb(89,89,89);
-    background: linear-gradient(90deg, rgba(89,89,89,1) 15%, rgba(89,89,89,1) 50%, rgba(89,89,89,1) 85%);
+header {
+    padding: 0.1%;
+    min-width: 1280px;
+    max-width: 2560px;
+    background: rgba(28, 28, 28, 0.8);
+    text-align: center;
+    margin-bottom: 20%;
+    backdrop-filter: blur(5px);
 }
 
-.navigation-menu li {
+header nav ul li {
     display: inline-block;
-    padding: 20px 7% 20px 7%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.navigation-menu a {
+header nav ul li a {
     text-decoration: none;
-    color: black;
-    font-size: 25px;
-}
-
-.active-page a {
-    color: orange;
+    color: white;
+    font-size: 19px;
 }
 
 .welcome-string {
     min-width: 1450px;
     max-width: 100%;
-    display: block;
-    margin: 25px 5% 25px 5%;
-    text-align: justify;
 }
 
 .welcome-string {
@@ -37,16 +42,16 @@ body {
 }
 
 .welcome-string h1 {
-    font-size: 55px;
-    margin-top: 45px;
+    font-size: 75px;
     text-align: center;
-    padding: 18% 0 30% 0;
 }
 
-.about_website {
+.short-information {
     text-align: justify;
     font-size: 35px;
-    margin: 0px 10% 45px 10%;
+    margin: 25% 10% 45px 10%;
+    background: rgb(89,89,89);
+    background: linear-gradient(90deg, rgba(89,89,89,1) 15%, rgba(89,89,89,1) 50%, rgba(89,89,89,1) 85%);
 }
 
 @keyframes anim-text {
