@@ -19,9 +19,9 @@ def present_projects():
     return render_template('projects.html')
 
 
-@app.route("/stack", methods=["GET"])
+@app.route("/stack_tech", methods=["GET"])
 def present_stack():
-    return render_template('stack.html')
+    return render_template('stack_tech.html')
 
 
 app.run(debug=True, port=3000, host='localhost')
