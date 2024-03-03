@@ -1,57 +1,34 @@
 body {
-    font-family: "Century Gothic";
-}
-
-.header {
-    min-width: 1600px;
-    background: rgb(89,89,89);
-    background: linear-gradient(90deg, rgba(89,89,89,1) 15%, rgba(89,89,89,1) 50%, rgba(89,89,89,1) 85%);
-}
-
-.navigation-menu li {
-    display: inline-block;
-    padding: 20px 7% 20px 7%;
-}
-
-.navigation-menu a {
-    text-decoration: none;
-    color: black;
-    font-size: 25px;
-}
-
-.active-page a {
-    color: orange;
-}
-
-.welcome-string {
-    min-width: 1450px;
-    max-width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    height: 100%;
+    width: 100%;
+    max-height: 2160px;
+    max-width: 3840px;
     display: block;
-    margin: 25px 5% 25px 5%;
-    text-align: justify;
+    margin: 0;
 }
 
-.welcome-string h1 {
-    font-size: 55px;
-    margin-top: 45px;
+header {
+    padding: 0.1%;
+    background: rgba(28, 28, 28, 0.8);
     text-align: center;
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
-.welcome-string a {
-    font-size: 40px;
+header nav ul li {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-footer {
-    background: cornflowerblue;
-    align-items: center;
-    min-width: 1600px;
-    max-width: 100%;
-    border: 1px solid black;
-    margin: 4% 0 0 0;
-    text-align: center;
-}
-
-.hello_world {
-    font-size: 65px;
-    padding: 15px;
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
 }

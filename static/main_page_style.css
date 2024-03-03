@@ -3,68 +3,84 @@ body {
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
-    background: url(/static/images/main_background.jpg) center no-repeat;
-    color: white;
+    height: 100%;
+    width: 100%;
+    max-height: 2160px;
+    max-width: 3840px;
     display: block;
     margin: 0;
 }
 
-header {
+.header_blur {
     padding: 0.1%;
-    min-width: 1280px;
-    max-width: 2560px;
-    background: rgba(28, 28, 28, 0.8);
-    text-align: center;
-    margin-bottom: 20%;
+    background: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(5px);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
-header nav ul li {
+.header_blur nav ul li {
     display: inline-block;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-header nav ul li a {
+.header_blur nav ul li a {
     text-decoration: none;
-    color: white;
     font-size: 19px;
+    color: white;
 }
 
-.welcome-string {
-    min-width: 1450px;
-    max-width: 100%;
+.block {
+    padding-top: 20%;
+    padding-bottom: 20%;
 }
 
-.welcome-string {
+.welcome_string {
+    background: url("images/welcome_background.jpg") center;
+    background-size: cover;
+}
+
+.welcome_string h1 {
     animation: 2s anim-text ease-out infinite;
-    animation-iteration-count: 1
-}
-
-.welcome-string h1 {
+    animation-iteration-count: 1;
     font-size: 75px;
     text-align: center;
+    color: white;
 }
 
-.short-information {
-    text-align: justify;
-    font-size: 35px;
-    margin: 25% 10% 45px 10%;
-    background: rgb(89,89,89);
-    background: linear-gradient(90deg, rgba(89,89,89,1) 15%, rgba(89,89,89,1) 50%, rgba(89,89,89,1) 85%);
+.slogan_string {
+    background: url("images/slogun_background.jpg");
+    background-size: cover;
+}
+
+.slogan_string h1 {
+    font-size: 75px;
+    text-align: center;
+    color: black;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(1px);
+    padding: 15px;
 }
 
 @keyframes anim-text {
   0% {
     opacity: 0;
-    transform: translateY(80%);
+    transform: translateY(150%);
   }
-  20% {
-    opacity: 0;
+  25% {
+    opacity: 0.3;
+    transform: translateY(0%)
   }
   50% {
-    opacity: 1;
+    opacity: 0.6;
     transform: translateY(0%);
+  }
+  75% {
+  opacity: 0.8;
+  transform: translateY(0%);
   }
   100% {
     opacity: 1;
